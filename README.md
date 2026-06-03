@@ -86,7 +86,7 @@ No VM guests are running outdated hypervisor (qemu) binaries on this host.
 $ gpg --batch --passphrase '' --quick-generate-key "Kristina <kristi0iw0@gmail.com>" rsa2048 default never
 gpg: создан каталог '/home/kristina/.gnupg/openpgp-revocs.d'
 gpg: сертификат отзыва записан в '/home/kristina/.gnupg/openpgp-revocs.d/B2E3342CA7F43267B8FCE5F5B6B4CC630DAFCF7C.rev'.
-
+```
 Результат:
 
 ```bash
