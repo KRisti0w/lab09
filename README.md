@@ -13,7 +13,6 @@ go: downloading github.com/tomnomnom/linkheader v0.0.0-20180905144013-02ca5825eb
 3) Установлен `GPG`
 ```bash
  $ sudo $PACKAGE_MANAGER install ${GPG_PACKAGE_NAME}
-```
 Обновление:
   dirmngr  gnupg  gnupg-l10n  gnupg-utils  gpg  gpg-agent  gpg-wks-client  gpgconf  gpgsm  gpgv
 
