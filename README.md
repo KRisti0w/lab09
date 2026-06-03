@@ -151,7 +151,6 @@ gpg:                ключом RSA с идентификатором B2E3342CA
 gpg: Действительная подпись пользователя "Kristina <kristi0iw0@gmail.com>" [абсолютное]
 
 $ git show v0.1.0.0
-```
 tag v0.1.0.0
 Tagger: Kristina <kristi0iw0@gmail.com>
 Date:   Wed Jun 3 12:58:55 2026 +0300
@@ -197,7 +196,7 @@ To https://github.com/KRisti0w/lab09
  * [new branch]      main -> main
  * [new tag]         v0.1.0.0 -> v0.1.0.0
 ```
-8) Создан релиза, привязанный к тегу:
+7) Создан релиза, привязанный к тегу:
 ```bash
 $ github-release info -u ${GITHUB_USERNAME} -r lab09
 tags:
@@ -207,14 +206,14 @@ $ github-release release --user KRisti0w --repo lab09 --tag v0.1.0.0 --name "lib
 ```
 https://github.com/KRisti0w/lab09/releases/tag/v0.1.0.0
 
-9) Cобранный архив загружен в релиз:
+8) Cобранный архив загружен в релиз:
 ```bash
 $ export PACKAGE_OS=`uname -s` PACKAGE_ARCH=`uname -m` 
 $ export PACKAGE_FILENAME=print-${PACKAGE_OS}-${PACKAGE_ARCH}.tar.gz
 $ github-release upload --user KRisti0w --repo lab09 --tag v0.1.0.0 --name "print-Linux-x86_64.tar.gz" --file print-Linux-x86_64.tar.gz
 ```
 
-10) Проверям, что архив доступен для скачивания и содержит верные файлы:
+9) Проверям, что архив доступен для скачивания и содержит верные файлы:
 ```bash
 $ github-release info -u ${GITHUB_USERNAME} -r lab09
 tags:
